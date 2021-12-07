@@ -72,8 +72,8 @@ dev.off()
 ################################################################################
 ## Random Intercept ##
 ################################################################################
-nu <- 7
-A <- 1
+nu <- 7  # 7 can be used a common default value degrees of freedom when modeling standard deviation
+A <- 1   # Since we are doing logistical regression, we can get away with using 1
 
 ## What about a hierarchical intercept in our weather models?
 weather[,"month2"] <- factor(weather$month)         #integer values for month
